@@ -1,31 +1,54 @@
 {
-	"Version": 3,
-	"FileReferences": {
-		"Moc": "AS04.moc3",
-		"Textures": [
-			"AS04.2048/texture_00.png",
-			"AS04.2048/texture_01.png",
-			"AS04.2048/texture_02.png",
-			"AS04.2048/texture_03.png",
-			"AS04.2048/texture_04.png",
-			"AS04.2048/texture_05.png"
-		],
-		"Physics": "AS04.physics3.json",
-		"DisplayInfo": "AS04.cdi3.json"
-	},
-	"Groups": [
-		{
-			"Target": "Parameter",
-			"Name": "LipSync",
-			"Ids": []
-		},
-		{
-			"Target": "Parameter",
-			"Name": "EyeBlink",
-			"Ids": [
-				"PARAM_EYE_L_OPEN",
-				"PARAM_EYE_R_OPEN"
-			]
-		}
-	]
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "AS04.moc3",
+    "Textures": [
+      "AS04.2048/texture_00.png",
+      "AS04.2048/texture_01.png",
+      "AS04.2048/texture_02.png",
+      "AS04.2048/texture_03.png",
+      "AS04.2048/texture_04.png",
+      "AS04.2048/texture_05.png"
+    ],
+    "Physics": "AS04.physics3.json",
+    "DisplayInfo": "AS04.cdi3.json",
+    "Expressions": [
+      {
+        "Name": "happy",
+        "File": "expressions/happy.exp3.json"
+      },
+      {
+        "Name": "angry",
+        "File": "expressions/Angry1.exp3.json"
+      },
+      {
+        "Name": "angry1",
+        "File": "expressions/Angry2.exp3.json"
+      },
+      {
+        "Name": "blush",
+        "File": "expressions/Blush.exp3.json"
+      },
+      {
+        "Name": "body-switch",
+        "File": "expressions/Body Switch.exp3.json"
+      },
+      {
+        "Name": "jacket",
+        "File": "expressions/Jacket.exp3.json"
+      }
+    ]
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": ["PARAM_MOUTH_OPEN_Y"]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": ["PARAM_EYE_L_OPEN", "PARAM_EYE_R_OPEN"]
+    }
+  ]
 }

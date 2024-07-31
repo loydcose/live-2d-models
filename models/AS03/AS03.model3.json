@@ -1,28 +1,51 @@
 {
-	"Version": 3,
-	"FileReferences": {
-		"Moc": "AS03.moc3",
-		"Textures": [
-			"AS03.4096/texture_00.png",
-			"AS03.4096/texture_01.png",
-			"AS03.4096/texture_02.png"
-		],
-		"Physics": "AS03.physics3.json",
-		"DisplayInfo": "AS03.cdi3.json"
-	},
-	"Groups": [
-		{
-			"Target": "Parameter",
-			"Name": "LipSync",
-			"Ids": []
-		},
-		{
-			"Target": "Parameter",
-			"Name": "EyeBlink",
-			"Ids": [
-				"PARAM_EYE_L_OPEN",
-				"PARAM_EYE_R_OPEN"
-			]
-		}
-	]
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "AS03.moc3",
+    "Textures": [
+      "AS03.4096/texture_00.png",
+      "AS03.4096/texture_01.png",
+      "AS03.4096/texture_02.png"
+    ],
+    "Physics": "AS03.physics3.json",
+    "DisplayInfo": "AS03.cdi3.json",
+    "Expressions": [
+      {
+        "Name": "happy",
+        "File": "expressions/happy.exp3.json"
+      },
+      {
+        "Name": "beg",
+        "File": "expressions/beg.exp3.json"
+      },
+      {
+        "Name": "blush",
+        "File": "expressions/blush.exp3.json"
+      },
+      {
+        "Name": "cry",
+        "File": "expressions/cry.exp3.json"
+      },
+      {
+        "Name": "flower",
+        "File": "expressions/flower.exp3.json"
+      },
+      {
+        "Name": "mad",
+        "File": "expressions/mad.exp3.json"
+      }
+    ]
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": ["PARAM_MOUTH_OPEN_Y"]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": ["PARAM_EYE_L_OPEN", "PARAM_EYE_R_OPEN"]
+    }
+  ]
 }
